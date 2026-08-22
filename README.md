@@ -242,8 +242,8 @@ Movies per decade grew from **36,800 in the 1950s** to **209,700 in the 2010s** 
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/movie-analysis-da-project.git
-cd movie-analysis-da-project
+git clone https://github.com/Tanishq1222/Movie-Analysis.git
+cd Movie-Analysis
 ```
 
 **2. Install dependencies**
@@ -258,17 +258,17 @@ pip install pandas numpy matplotlib seaborn
 
 **4. Run data cleaning**
 ```bash
-python notebooks/Loading_And_Cleaning.ipynb
+jupyter notebooks/Loading_And_Cleaning.ipynb
 ```
 
 **5. Run EDA**
 ```bash
-python notebooks/EDA.ipynb
+jupyter notebooks/EDA.ipynb
 ```
 
 **6. Generate charts**
 ```bash
-python notebooks/Data_Visualization.ipynb
+jupyter notebooks/Data_Visualization.ipynb
 ```
 
 **7. Open Power BI dashboard**
