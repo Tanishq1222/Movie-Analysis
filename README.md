@@ -31,7 +31,7 @@
 
 The movie industry is one of the most data-rich and commercially competitive industries in the world. Studios invest hundreds of millions of dollars per film with no guarantee of return — making data-driven decision making critically important.
 
-This project follows a **5-phase industry-standard analytical workflow:**
+This project follows a **5-phase analytical workflow:**
 
 ```
 Raw Data → Data Cleaning → EDA → Python Visualizations → Power BI Dashboard → Business Insights
@@ -51,9 +51,9 @@ Raw Data → Data Cleaning → EDA → Python Visualizations → Power BI Dashbo
 
 | Property | Detail |
 |---|---|
-| **File** | `movies_dataset.csv` (compressed as `movies_data.zip`) |
+| **File** | `movies_dataset` (compressed as `Raw_dataset.zip`) |
 | **Total records** | 999,999 movies |
-| **Time period** | 1950 – 2025 |
+| **Time period** | 1950 – 2020 |
 | **Original columns** | 17 |
 | **Final columns after cleaning** | 27 |
 | **Genres** | Action, Comedy, Documentary, Drama, Horror, Romance, Sci-Fi, Thriller |
@@ -98,8 +98,9 @@ movie-analysis-da-project/
 │   └── movies_data.zip          ← compressed raw + clean dataset
 │
 ├── notebooks/
-│   ├── movies_phase1_phase2.py  ← data cleaning + EDA script
-│   └── movies_charts.py         ← all visualization code
+│   ├── Loading_And_Cleaning.ipynb    ← data cleaning 
+|   ├── EDA.ipynb                     ← EDA script 
+│   └── Data_Visualization.ipynb      ← all visualization code
 │
 ├── dashboard/
 │   └── movie_dashboard.pbix     ← Power BI dashboard file
@@ -116,7 +117,7 @@ movie-analysis-da-project/
 
 ## Phase 1 — Data Cleaning
 
-**Script:** `notebooks/movies_phase1_phase2.py`
+**Script:** `notebooks/Loading_And_Cleaning.ipynb`
 
 **Audit findings on raw data:**
 - ✅ Zero missing values across all 17 columns
@@ -139,7 +140,7 @@ movie-analysis-da-project/
 
 ## Phase 2 — Exploratory Data Analysis
 
-**Script:** `notebooks/movies_phase1_phase2.py`
+**Script:** `notebooks/EDA.ipynb`
 
 8 business questions answered using GroupBy, correlation analysis and pivot tables:
 
@@ -252,20 +253,25 @@ pip install pandas numpy matplotlib seaborn
 
 **3. Extract the dataset**
 ```bash
-# Extract movies_data.zip into the data/ folder
+# Extract movies_data into the data/ folder
 ```
 
-**4. Run data cleaning + EDA**
+**4. Run data cleaning**
 ```bash
-python notebooks/movies_phase1_phase2.py
+python notebooks/Loading_And_Cleaning.ipynb
 ```
 
-**5. Generate charts**
+**5. Run EDA**
 ```bash
-python notebooks/movies_charts.py
+python notebooks/EDA.ipynb
 ```
 
-**6. Open Power BI dashboard**
+**6. Generate charts**
+```bash
+python notebooks/Data_Visualization.ipynb
+```
+
+**7. Open Power BI dashboard**
 ```
 Open dashboard/movie_dashboard.pbix in Power BI Desktop
 Connect to data/movies_clean.csv when prompted
