@@ -278,7 +278,7 @@ Connect to data/movies_clean.csv when prompted
 **Tanishq**
 B.E. Computer Science Engineering
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/YOUR_USERNAME)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/Tanishq1222)
 
 ---
 
